@@ -1,0 +1,20 @@
+# Battlefield 6 専用：相手のチャットのスラング（列の意味は dict/slang_en.csv と同じ）
+term,expand,ja
+mcom,M-COM station (objective),M-COM（目標）
+m-com,M-COM station (objective),M-COM（目標）
+obj,objective,目標
+cap,capture the objective,拠点を取って
+capping,capturing the objective,拠点を確保中
+ammo,ammunition,弾薬
+ammo pls,give me ammo please,弾薬ちょうだい
+med,medkit,回復キット
+meds,medkits,回復キット
+medic,medic,衛生兵
+beacon,spawn beacon,スポーンビーコン
+squad up,join my squad,分隊組もう
+sl,squad leader,分隊長
+spawn on me,spawn on me,自分にスポーンして
+heli,helicopter,ヘリ
+jet,jet,ジェット機
+tank,tank,戦車
+at,anti-tank,対戦車

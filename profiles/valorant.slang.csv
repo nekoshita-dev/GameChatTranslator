@@ -1,0 +1,26 @@
+# VALORANT 専用：相手のチャットのスラング（列の意味は dict/slang_en.csv と同じ）
+# op は共通辞書では overpowered ですが、VALORANTでは武器のオペレーターを指すことが多いので上書きしています
+term,expand,ja
+op,Operator (sniper rifle),オペレーター（OP）
+eco,save round,エコラウンド
+full buy,full buy,フルバイ
+force,force buy,フォースバイ
+save,save,セーブ
+drop,drop me a weapon,武器落として
+drop me,drop me a weapon,武器落として
+ult,ultimate,アルティメット
+ults,ultimates,アルティメット
+util,utility,スキル
+plant,plant the spike,スパイク設置
+planted,spike planted,設置された
+defuse,defuse the spike,解除して
+def,defuse,解除
+rotate,rotate,ローテート
+lurk,lurk,裏取り
+lurker,lurker,裏取り役
+ace,ace,エース
+clutch,clutch,クラッチ
+heaven,heaven,ヘブン
+a site,A site,Aサイト
+b site,B site,Bサイト
+c site,C site,Cサイト

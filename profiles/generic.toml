@@ -1,0 +1,20 @@
+# 汎用プロファイル：Enter でチャットが開くゲーム向け
+# 新しいゲームを追加するときは、このファイルをコピーして作ってください（CONTRIBUTING.md 参照）
+name = "汎用（Enterでチャット）"
+notes = ""
+
+[chat]
+open_key = "enter"       # チャット欄を開くキー（"shift+enter" のような組み合わせも可）
+alt_open_key = ""        # 2つ目のチャット（全体チャットなど）を開くキー。無ければ ""
+send_key = "enter"       # 送信キー
+open_delay = 0.15        # チャット欄が開くまでの待ち時間（秒）。文字が欠けるなら増やす
+key_delay = 0.012        # 1文字ごとの間隔（秒）。文字が欠けるなら増やす
+max_chars = 120          # 1回に送る最大文字数
+ime_off = true           # 入力の間だけ日本語入力（IME）をオフにする（全角や「偽亀」のような変換を防ぐ）
+type_mode = "unicode"     # 文字の送り方。"unicode"（日本語入力に左右されない）/ "scancode"（unicode で文字が入らないゲーム用）
+ignore_patterns = []      # 翻訳しない行（正規表現）。ゲームの操作説明など
+strip_patterns = []       # 行の中から取り除く部分（正規表現）
+
+[dictionary]
+slang = []               # このゲーム専用のスラング辞書（profiles フォルダ内のCSV）
+speech = []              # このゲーム専用の音声用語辞書

@@ -1,0 +1,69 @@
+# 相手のチャット用：英語のスラング・略語（全ゲーム共通）
+# term   = チャットに出てくる言い方（大文字・小文字は区別しない）
+# expand = 文の中に出てきたとき、翻訳前に置き換える正式な言い方（空欄なら置き換えない）
+# ja     = その語だけの発言だったとき、翻訳せずにそのまま表示する訳（空欄なら翻訳する）
+# プロファイルごとの辞書（profiles/*.slang.csv）に同じ term があれば、そちらが優先されます
+term,expand,ja
+gg,good game,お疲れさま（GG）
+ggwp,good game well played,お疲れさま、ナイスプレー（GGWP）
+gg wp,good game well played,お疲れさま、ナイスプレー（GGWP）
+wp,well played,ナイスプレー
+gj,good job,ナイス（GJ）
+ns,nice shot,ナイスショット
+nt,nice try,ドンマイ（ナイストライ）
+glhf,good luck have fun,よろしく、楽しもう（GLHF）
+gl hf,good luck have fun,よろしく、楽しもう（GLHF）
+gl,good luck,頑張ろう
+hf,have fun,楽しもう
+ty,thank you,ありがとう
+tyvm,thank you very much,本当にありがとう
+thx,thanks,ありがとう
+np,no problem,どういたしまして
+mb,my bad,ごめん（自分のミス）
+afk,away from keyboard,離席中
+brb,be right back,すぐ戻る
+omw,on my way,今向かってる
+otw,on the way,今向かってる
+gtg,got to go,もう行かなきゃ
+g2g,got to go,もう行かなきゃ
+cya,see you,またね
+bb,bye bye,バイバイ
+lol,(laughing),笑
+lmao,(laughing hard),爆笑
+lmfao,(laughing hard),爆笑
+rofl,(laughing hard),爆笑
+xd,(laughing),笑
+idk,I don't know,わからない
+idc,I don't care,どうでもいい
+imo,in my opinion,
+tbh,to be honest,
+btw,by the way,
+rn,right now,
+asap,as soon as possible,
+pls,please,
+plz,please,
+pl0x,please,
+u,you,
+ur,your,
+ez,easy,楽勝（煽り）
+noob,beginner,初心者（煽り）
+nub,beginner,初心者（煽り）
+bot,bad player,下手くそ（煽り）
+op,overpowered,強すぎ
+nerf,weaken,
+buff,strengthen,
+rez,revive,蘇生して
+res,revive,蘇生して
+nade,grenade,
+nades,grenades,
+ff,forfeit,降参しよう（FF）
+inc,enemies incoming,敵が来る
+hs,headshot,ヘッドショット
+1hp,almost dead,瀕死
+one shot,almost dead,あと一発で倒せる
+w,,勝ち（W）
+l,,負け（L）
+wtf,what the hell,は？（何それ）
+wth,what the hell,は？（何それ）
+omg,oh my god,うわ／まじか
+smh,shaking my head,あきれた

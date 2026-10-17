@@ -1,0 +1,114 @@
+# GameChat Translator の設定
+# メモ帳などで開いて書き換えてください。書き換えたらツールを再起動すると反映されます。
+# 文字列は "..." で囲みます。true / false は小文字です。
+#
+# ※ このファイル（settings.toml）は初回起動時に settings.default.toml から作られます。
+#    アプリを更新しても上書きされません。書いていない項目は初期値になるので、
+#    変えたい項目だけを残して他を消してもかまいません。
+
+# 使うゲーム（profiles フォルダの .toml ファイル名）
+#   bf6 / apex / valorant / r6s / generic
+game = "bf6"
+
+# true にすると、読み取りエラーなどの詳細を表示
+debug = false
+
+
+[voice]
+# ===== 自分の発言（音声 → 英語） =====
+enabled = true
+
+# 押している間だけ録音するキー（例: "f8", "caps lock", "v", "mouse4" = マウスのサイドボタン）
+hotkey = "f8"
+
+# もう1つのチャット（全体チャットなど）に送るキー。使わないなら ""
+# 送り先はゲームプロファイルの alt_open_key
+alt_hotkey = ""
+
+# 翻訳方法
+#   "google"  … 日本語で文字起こし → 辞書で用語を置き換え → Google翻訳（無料・キー不要、辞書が効く）
+#   "deepl"   … 同上でDeepL翻訳（より自然。[api] の deepl_key が必要）
+#   "mymemory"… 同上で MyMemory 翻訳（無料・1日の上限あり）
+#   "whisper" … Whisperで直接英訳（ネット不要。辞書の置き換えは効かない）
+# 翻訳サービスが使えないときは、自動で別のサービス → 最後は Whisper の直接英訳に切り替わります
+translator = "google"
+
+# 音声認識モデル: "auto"（GPUならmedium、CPUならsmall）/ "small" / "medium" / "large-v3"
+model = "auto"
+
+# true: 送信（Enter）まで自動 / false: 入力だけして送信は自分で
+auto_send = true
+
+# 使うマイク。-1 = Windowsの既定のマイク
+# 番号（例: 3）か、名前の一部（例: "Yeti"）で指定できます。一覧は run.bat --devices で表示
+input_device = -1
+
+# 録音開始・終了・送信時に音を鳴らす
+beep = true
+
+max_seconds = 15     # 最大録音時間（秒）
+min_seconds = 0.4    # これより短い録音は無視
+preroll = 0.4        # キーを押す直前の音も含める秒数（言い出しが切れるのを防ぐ）
+postroll = 0.3       # キーを離した後も録音を続ける秒数（語尾が切れるのを防ぐ）
+auto_gain = true     # 声が小さいとき自動で音量を上げる
+vad_threshold = 0.3  # 声を判定する感度（0.1〜0.9、小さいほど小さな声も拾う）
+show_level = true    # 録音ごとにマイクの音量を表示
+
+
+[chat_translate]
+# ===== 相手のチャット（画面読み取り → 日本語） =====
+enabled = true
+
+# F7・F9〜F11 のキーは、Alt や Windows キーを押しているときは反応しません
+# （NVIDIA のインスタントリプレイ Alt+F10 などと重ならないように）
+# "ctrl+f10" のような組み合わせも書けます
+region_key = "f9"    # チャット欄の範囲を選ぶキー（範囲はゲームごとに保存）
+toggle_key = "f10"   # 翻訳表示のオン/オフ
+
+# 翻訳方法: "google"（無料・キー不要）/ "deepl"（APIキーが必要）/ "mymemory"（無料・1日の上限あり）
+# 選んだものが使えないときは、自動で別のものに切り替わります
+translator = "google"
+
+# 自分のプレイヤー名（入れておくと自分の発言は翻訳しない）
+my_name = ""
+
+poll_interval = 0.8  # 画面を読み取る間隔（秒）
+monitor = 1          # ゲームを表示しているモニター（1 = メイン）
+min_score = 0.6      # 読み取りの確からしさがこれ未満の文字は捨てる（0〜1）
+
+# 画面の撮影方法: "auto"（おすすめ）/ "dxcam"（フルスクリーンのゲームも撮れる）/ "mss"（従来の方法）
+capture = "auto"
+
+# 翻訳しない行（正規表現）。チャット欄の近くに出る決まった文字を無視したいときに追加
+#   例: ignore_patterns = ["表示切替", "^Press "]
+ignore_patterns = []
+# 行の中から取り除く部分（正規表現）。例: strip_patterns = ["\\[TAB\\].*$"]
+strip_patterns = []
+
+
+[overlay]
+# ===== 翻訳の表示 =====
+position = "above"   # "above"（チャット欄の上）/ "below"（下）/ "right"（右）
+seconds = 20         # 表示しておく秒数
+max_lines = 6        # 同時に表示する最大行数
+font_size = 14
+alpha = 0.85         # 不透明度（0〜1）
+show_original = false  # true にすると元の文も表示
+font = "Yu Gothic UI"
+
+# 表示枠を動かす「移動モード」のキー。移動モード中は
+#   ドラッグ = 移動 / ホイール = 文字の大きさ / Shift+ホイール = 幅 / 右クリック = 自動の位置に戻す
+# もう一度押すと確定（位置はゲームごとに保存）。2台目のモニターに置くこともできます
+move_key = "f7"
+width = 0            # 表示枠の幅（0 = チャット欄の幅に合わせる）
+
+
+[dictionary]
+# 辞書（dict フォルダと profiles フォルダの .csv）を読み込み直すキー。ゲーム中に辞書を編集したら押す
+reload_key = "f11"
+
+
+[api]
+# DeepL の APIキー（https://www.deepl.com/pro-api で無料キーを取得できます）
+# 環境変数 DEEPL_API_KEY でも指定できます
+deepl_key = ""

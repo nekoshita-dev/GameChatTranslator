@@ -1,0 +1,29 @@
+# 自分の発言用：日本語のゲーム用語 → 英語（全ゲーム共通）
+# ja = 話すときの日本語（音声認識に「この単語が出てくるかも」と教えるのにも使います）
+# en = 翻訳で使ってほしい英語
+# 長い語から順に置き換えます。プロファイルごとの辞書（profiles/*.speech.csv）に同じ ja があれば、そちらが優先されます
+# ※ settings.toml の voice.translator が "whisper" のときは使われません
+ja,en
+裏取り,flank
+ナイスゲーム,good game
+ナイスショット,nice shot
+ナイス,nice
+みんながんばろう,good luck everyone
+ドンマイ,no worries
+おつかれさま,gg
+お疲れ様,gg
+おつかれ,gg
+よろしくお願いします,glhf
+よろしく,glhf
+蘇生,revive
+回復,heal
+援護,cover
+カバー,cover
+突撃,push
+詰める,push
+詰めて,push
+グレネード,grenade
+グレ,grenade
+スモーク,smoke
+芋,camper
+敵,enemy

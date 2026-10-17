@@ -1,0 +1,18 @@
+# Rainbow Six Siege 専用：相手のチャットのスラング（列の意味は dict/slang_en.csv と同じ）
+term,expand,ja
+obj,objective,目標
+roam,roam,ローム
+roamer,roamer,ローマー
+roaming,roaming,ロームしてる
+drone,drone,ドローン
+droning,droning,ドローン偵察中
+reinforce,reinforce the wall,補強して
+rf,reinforce,補強
+hatch,hatch,ハッチ
+defuser,defuser,ディフューザー
+plant,plant the defuser,設置して
+spawn peek,spawn peek,スポーンピーク
+dc,disconnected,回線落ち
+ace,ace,エース
+clutch,clutch,クラッチ
+1v1,one versus one,1対1

@@ -1,0 +1,9 @@
+faster-whisper>=1.0
+sounddevice
+numpy
+rapidocr_onnxruntime
+opencv-python
+mss
+deep-translator
+Pillow
+dxcam

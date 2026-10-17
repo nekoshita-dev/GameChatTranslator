@@ -1,0 +1,15 @@
+name = "Apex Legends"
+# チャットキーは初期設定の想定です。ゲーム内のキー設定と違う場合は open_key を書き換えてください
+notes = "チャットキーは初期設定（Enter）を想定しています。動かない場合はゲーム内のキー設定を確認してください。"
+
+[chat]
+open_key = "enter"
+alt_open_key = ""
+send_key = "enter"
+open_delay = 0.2
+key_delay = 0.015
+max_chars = 120
+
+[dictionary]
+slang = ["apex.slang.csv"]
+speech = ["apex.speech.csv"]

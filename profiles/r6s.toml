@@ -1,0 +1,15 @@
+name = "Rainbow Six Siege"
+# U = チームチャット、Y = 全体チャット（初期設定の想定）
+notes = "チャットキーは初期設定（チーム: U / 全体: Y）を想定しています。違う場合は open_key / alt_open_key を書き換えてください。"
+
+[chat]
+open_key = "u"
+alt_open_key = "y"
+send_key = "enter"
+open_delay = 0.2
+key_delay = 0.015
+max_chars = 120
+
+[dictionary]
+slang = ["r6s.slang.csv"]
+speech = ["r6s.speech.csv"]

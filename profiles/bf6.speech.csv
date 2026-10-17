@@ -1,0 +1,20 @@
+# Battlefield 6 専用：自分の発言の用語（列の意味は dict/speech_ja.csv と同じ）
+ja,en
+分隊長,squad leader
+分隊,squad
+スポーンビーコン,spawn beacon
+ビーコン,beacon
+リスポーン,spawn
+弾薬箱,ammo box
+弾薬,ammo
+衛生兵,medic
+援護兵,support
+工兵,engineer
+偵察兵,recon
+突撃兵,assault
+拠点,objective
+戦車,tank
+ヘリ,heli
+戦闘機,jet
+ジェット,jet
+対戦車,anti-tank

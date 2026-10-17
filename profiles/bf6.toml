@@ -1,0 +1,19 @@
+name = "Battlefield 6"
+notes = ""
+
+[chat]
+open_key = "enter"
+alt_open_key = ""
+send_key = "enter"
+open_delay = 0.15
+key_delay = 0.012
+max_chars = 120
+# チャット欄の近くに出る操作説明（「TAB 表示切替」「上下左右に移動」など）は翻訳しない
+# （「移動」は日本語の字。中国語は「移动」なので中国語の発言には影響しません）
+ignore_patterns = ["表示切", "切替", "切換", "移動"]
+strip_patterns = ["\\[TAB\\].*$"]
+
+[dictionary]
+slang = ["bf6.slang.csv"]
+speech = ["bf6.speech.csv"]
+

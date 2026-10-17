@@ -1,0 +1,15 @@
+name = "VALORANT"
+# Enter = チームチャット、Shift+Enter = 全体チャット（初期設定の想定）
+notes = "VALORANTのアンチチート（Vanguard）は自動入力に特に厳しいため、送信が効かない・規約上のリスクが高い可能性があります。自己責任で、まずはカスタムマッチで試してください。"
+
+[chat]
+open_key = "enter"
+alt_open_key = "shift+enter"
+send_key = "enter"
+open_delay = 0.2
+key_delay = 0.015
+max_chars = 120
+
+[dictionary]
+slang = ["valorant.slang.csv"]
+speech = ["valorant.speech.csv"]

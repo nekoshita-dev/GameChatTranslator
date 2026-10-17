@@ -1,0 +1,30 @@
+# Apex Legends 専用：相手のチャットのスラング（列の意味は dict/slang_en.csv と同じ）
+term,expand,ja
+cracked,his shield is broken,シールド割れた
+one shot,almost dead,あと一発
+knocked,downed,ダウンさせた
+knock,down,ダウン
+thirst,finish off the downed enemy,確殺
+thirsty,finishing off downed enemies,確殺してくる
+3p,third party,漁夫
+third party,another team joining the fight,漁夫
+third partied,another team joined the fight,漁夫られた
+rez,revive,蘇生して
+res,revive,蘇生して
+banner,banner card,バナー
+respawn,respawn at the beacon,リスポーンして
+ring,the zone,リング（安置）
+zone,the zone,リング（安置）
+pk,Peacekeeper,ピースキーパー
+r99,R-99,R-99
+lstar,L-STAR,L-STAR
+cells,shield cells,シールドセル
+batt,shield battery,バッテリー
+batts,shield batteries,バッテリー
+bat,shield battery,バッテリー
+syringe,syringe,注射器
+medkit,medkit,医療キット
+evo,evo shield,進化シールド
+purple,purple shield,紫アーマー
+red,red shield,赤アーマー
+loot,loot,物資
